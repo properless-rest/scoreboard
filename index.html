@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Score Board</title>
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    
+    <body>
+        <main class="main">
+            <section class="section-display">
+                <div class="div-side">
+                    <h3 class="title">HOME</h3>
+                    <span id="home-score" class="score"></span>
+                    <div class="div-btns">
+                        <button id="js-home-score-1" class="btn">+1</button>
+                        <button id="js-home-score-2" class="btn">+2</button>
+                        <button id="js-home-score-3" class="btn">+3</button>
+                    </div>
+                </div>
+                <div class="div-side">
+                    <h3 class="title">GUEST</h3>
+                    <span id="guest-score" class="score"></span>
+                    <div class="div-btns">
+                        <button id="js-guest-score-1" class="btn">+1</button>
+                        <button id="js-guest-score-2" class="btn">+2</button>
+                        <button id="js-guest-score-3" class="btn">+3</button>
+                    </div>
+                </div>   
+            </section>
+            <section class="section-reset">
+                <button id="js-btn-reset" class="btn btn-reset">RESET</button>
+            </section>
+            
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+
+</html>

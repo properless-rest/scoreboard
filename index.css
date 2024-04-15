@@ -1,0 +1,114 @@
+@font-face {
+  src: url("./fonts/CursedTimerUlil.ttf");
+  font-family: CursedTimer;
+}
+
+:root {
+  --main-bg-color: #1B244A;
+  --score-bg-color: #000000;
+  --border-color: #bbbbbb;
+  --title-color: #fafafa;
+  --primary-color: #9AABD8;
+  --alert-color: #F94F6D;
+  --btn-clicked-color: #f5f5f5;
+  --btn-hover-bg-cover: #3B446A;
+}
+
+
+body {
+    margin: 0;
+}
+
+.main {
+    width: 575px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    border: 8px solid var(--border-color);
+    border-radius: 20px;
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.section-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.div-side {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-side .title{
+    margin: 36px auto 0;
+    color: var(--title-color);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-side .score {
+    width: 155px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 21px auto 26px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    background-color: var(--score-bg-color);
+    color: var(--alert-color);
+    font-size: 90px;
+    font-family: CursedTimer;
+}
+
+.div-side .div-btns {
+    width: 155px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px;
+}
+
+.div-btns button {
+    width: 45px;
+    height: inherit;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+
+    outline: none; /* removes glowing outline after click */    
+}
+
+.section-reset {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-reset .btn-reset {
+    border: 2px solid var(--alert-color);
+    color: var(--alert-color);
+    outline: none; /* removes glowing outline after click */    
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    font-family: CursedTimer;
+    text-shadow: 0 0 2px black;
+    transition: background-color, 0.3s;
+    transition: color, 0.1s;
+}
+
+.btn:active {
+    color: var(--btn-clicked-color);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg-cover);
+}
